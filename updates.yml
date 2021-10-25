@@ -1,7 +1,5 @@
 ---
 - hosts: all
-  become: yes
-  
   tasks:
    - name: create folder to store list of updates
      file:
