@@ -1,0 +1,13 @@
+---
+- hosts: win
+  tasks:
+   - name: Retrieve list of updates from Windows and update to ppms folder
+     win_updates:
+       category_names:
+         - Updates
+         - CriticalUpdates
+         - SecurityUpdates
+         - UpdateRollups
+       state: searched
+       log_path: C:\ppms\listofupdates.txt
+     register: result
