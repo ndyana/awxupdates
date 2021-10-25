@@ -1,7 +1,6 @@
 ---
 - hosts: all
   become: yes
-  become_method: sudo
   
   tasks:
    - name: create folder to store list of updates
