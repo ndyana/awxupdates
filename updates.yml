@@ -1,6 +1,7 @@
 ---
 - hosts: all
   become: yes
+  become_method: sudo
   
   tasks:
    - name: Retrieve list of updates from Windows and update to ppms folder
