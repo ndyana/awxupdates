@@ -1,6 +1,6 @@
 ---
 - hosts: all
-  ansible_become: yes
+  become: yes
   
   tasks:
    - name: create folder to store list of updates
