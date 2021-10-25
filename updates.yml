@@ -1,5 +1,7 @@
 ---
 - hosts: all
+  become: yes
+  
   tasks:
    - name: Retrieve list of updates from Windows and update to ppms folder
      win_updates:
