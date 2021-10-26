@@ -1,5 +1,5 @@
 ---
-- hosts: winhost
+- hosts: 192.168.2.33
   tasks:
    - name: create folder to store list of updates
      file:
