@@ -1,10 +1,10 @@
 ---
 - hosts: 192.168.2.33
   tasks:
-   - name: create folder to store list of updates
-     file:
-       path: C:\ppms\packagelist
-       state: directory  
+#   - name: create folder to store list of updates
+#     file:
+#       path: C:\ppms\packagelist
+#       state: directory  
    
    - name: Retrieve list of updates from Windows and update to ppms folder
      win_updates:
