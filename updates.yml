@@ -1,5 +1,5 @@
 ---
-- hosts: 192.168.2.94
+- hosts: 192.168.2.92
   tasks:
 #   - name: create folder to store list of updates
 #     file:
